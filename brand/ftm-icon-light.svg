@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">FTM icon mark light</title>
+  <desc id="desc">Minimal F mark with subtle wave motion detail.</desc>
+  <rect width="128" height="128" rx="18" fill="#F4F0E8"/>
+  <path fill="#050505" d="M34 38h16v70H34V38zm16 29h38v14H50V67z"/>
+  <path fill="#050505" d="M24 35c24 8 40-13 66-8 17 3 29 15 30 32-11-13-26-16-45-7-21 9-35 14-51 6-10-5-15-13-15-25 5 2 10 2 15 2z"/>
+</svg>

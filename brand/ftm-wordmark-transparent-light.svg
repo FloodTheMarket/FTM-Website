@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 220" role="img" aria-labelledby="title desc">
+  <title id="title">FTM transparent wordmark for light backgrounds</title>
+  <desc id="desc">Premium monochrome FTM wordmark with a subtle wave integrated into the F mark.</desc>
+  <g transform="translate(40 40)">
+    <path fill="#050505" d="M0 33h20v78H0V33zm20 32h51v17H20V65z"/>
+    <path fill="#050505" d="M-14 29c36 12 60-20 99-12 25 5 43 22 45 48-17-20-39-24-68-11-32 14-53 21-76 9-15-8-22-20-22-38 8 3 15 4 22 4z"/>
+    <path fill="#050505" d="M151 0h111v18h-45v93h-21V18h-45V0zm145 0h28l38 81L400 0h28v111h-20V32l-37 79h-18l-37-79v79h-20V0z"/>
+    <text x="0" y="154" fill="#050505" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" letter-spacing="10">FLOOD THE MARKET</text>
+  </g>
+</svg>
