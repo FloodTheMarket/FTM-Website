@@ -887,21 +887,23 @@ export default function Home() {
           </motion.div>
           <motion.form
             {...fadeUp(0.1)}
+            action="https://formspree.io/f/xbdbzkqr"
+            method="POST"
             className="grid gap-4"
-            onSubmit={(event) => event.preventDefault()}
           >
-            {/* TODO: Connect this form to Formspree, Resend, Supabase or another form handler when the backend is ready. */}
             {[
-              { label: "Name", type: "text" },
-              { label: "Business name", type: "text" },
-              { label: "Email", type: "email" },
-              { label: "Instagram/TikTok handle", type: "text" },
-              { label: "Type of business", type: "text" }
+              { label: "Name", name: "name", type: "text" },
+              { label: "Business name", name: "business_name", type: "text" },
+              { label: "Email", name: "email", type: "email" },
+              { label: "Instagram/TikTok handle", name: "social_handle", type: "text" },
+              { label: "Type of business", name: "business_type", type: "text" }
             ].map((field) => (
               <label key={field.label} className="grid gap-2">
                 <span className="text-sm font-medium text-black/64">{field.label}</span>
                 <input
+                  name={field.name}
                   type={field.type}
+                  required={field.name === "name" || field.name === "email"}
                   className="h-14 border border-black/14 bg-transparent px-4 text-base outline-none transition placeholder:text-black/35 focus:border-black"
                   placeholder={field.label}
                 />
@@ -912,11 +914,14 @@ export default function Home() {
                 What do you need help with?
               </span>
               <textarea
+                name="help_needed"
                 rows={5}
+                required
                 className="resize-none border border-black/14 bg-transparent p-4 text-base outline-none transition placeholder:text-black/35 focus:border-black"
                 placeholder="Visibility, retention, reviews, reporting, content consistency..."
               />
             </label>
+            <input type="hidden" name="_subject" value="New FTM Growth Audit Request" />
             <button
               type="submit"
               className="mt-2 inline-flex h-14 items-center justify-center gap-2 bg-ink px-6 text-sm font-semibold text-paper transition hover:bg-black"
