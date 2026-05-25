@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.floodthemarket.co.uk"),
   title: "FTM | Hospitality Growth & Operations",
   description:
-    "Modern growth infrastructure for restaurants, cafes and hospitality brands.",
+    "Modern growth systems for restaurants, cafes and hospitality brands.",
   icons: {
     icon: "/ftm-favicon-original.png",
     apple: "/apple-touch-icon.png"
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "FTM | Hospitality Growth & Operations",
     description:
-      "Modern growth infrastructure for restaurants, cafes and hospitality brands.",
+      "Modern growth systems for restaurants, cafes and hospitality brands.",
     images: ["/ftm-logo-original.png"]
   }
 };

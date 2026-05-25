@@ -46,7 +46,7 @@ const painPoints = [
   "Poor review generation",
   "No customer retention system",
   "No WhatsApp/customer database",
-  "No monthly KPI visibility",
+  "No monthly performance tracking.",
   "No clear growth system",
   "Underused attention",
   "Lack of operational organisation"
@@ -92,7 +92,7 @@ const services = [
   {
     title: "Operations",
     icon: BarChart3,
-    body: "Reporting and operational visibility that help owners understand what is working, what is leaking and what to improve next.",
+    body: "Reporting that helps owners understand what is working, what needs improving and what to focus on next.",
     points: [
       "Monthly KPI reporting",
       "Google review systems",
@@ -100,7 +100,7 @@ const services = [
       "Analytics summaries",
       "Content performance insights",
       "Customer engagement insights",
-      "Operational growth recommendations"
+      "Monthly growth recommendations"
     ]
   }
 ];
@@ -149,7 +149,7 @@ const packages = [
       "WhatsApp retention campaigns",
       "KPI dashboard/reporting",
       "Customer engagement strategy",
-      "Operational growth recommendations",
+      "Monthly growth recommendations",
       "Monthly strategy call"
     ]
   }
@@ -188,6 +188,21 @@ const caseStudyPlaceholders = [
   "Repeat customer campaigns",
   "Before/after content performance",
   "Customer retention improvements"
+];
+
+const pilotAreas = [
+  {
+    title: "Content examples",
+    copy: "Short-form videos, shoot days and hospitality storytelling."
+  },
+  {
+    title: "Review growth",
+    copy: "Google review systems and customer feedback loops."
+  },
+  {
+    title: "Retention tests",
+    copy: "QR capture, WhatsApp follow-up and repeat-customer campaigns."
+  }
 ];
 
 const systemCards = [
@@ -387,10 +402,10 @@ function SystemPanel() {
     <div className="border hairline bg-black/44 p-5 shadow-soft backdrop-blur-md">
       <div className="flex items-start justify-between gap-6 border-b hairline pb-5">
         <div>
-          <p className="text-sm text-muted">Growth infrastructure</p>
+          <p className="text-sm text-muted">Growth systems</p>
           <p className="mt-2 max-w-sm text-2xl font-semibold text-white">
-            Content, retention, reviews and reporting in one monthly operating
-            rhythm.
+            Content, retention, reviews and reporting in one monthly growth
+            system.
           </p>
         </div>
         <ShieldCheck className="mt-1 shrink-0 text-sage" size={26} />
@@ -464,11 +479,11 @@ export default function Home() {
               <span>Hospitality growth and operations</span>
             </div>
             <h1 className="max-w-5xl text-balance font-display text-5xl font-semibold leading-[0.95] tracking-[-0.02em] text-white sm:text-6xl lg:text-7xl 2xl:text-8xl">
-              Modern growth infrastructure for hospitality brands.
+              Modern growth systems for hospitality brands.
             </h1>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-paper/76 sm:text-xl">
               FTM helps restaurants, cafes and hospitality businesses improve
-              visibility, retention and operational performance through content,
+              visibility, retention and customer engagement through content,
               systems and strategy.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
@@ -562,7 +577,7 @@ export default function Home() {
           <motion.div {...fadeUp()} className="max-w-3xl">
             <SectionLabel>Services</SectionLabel>
             <h2 className="text-balance text-4xl font-semibold leading-tight text-white sm:text-6xl">
-              Content is the entry point. Infrastructure is the value.
+              Content is the entry point. Systems create the value.
             </h2>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-paper/68">
               FTM connects visibility, retention, reviews and reporting so
@@ -821,7 +836,7 @@ export default function Home() {
             {[
               {
                 title: "Operations, systems and growth",
-                copy: "Finance, client management, reporting, operational organisation and growth infrastructure."
+                copy: "Finance, client management, reporting, operational organisation and growth systems."
               },
               {
                 title: "Creative direction and production",
@@ -933,6 +948,42 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="border-y hairline bg-carbon py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-5 sm:px-8">
+          <motion.div {...fadeUp()} className="grid gap-8 lg:grid-cols-[0.82fr_1.18fr] lg:items-end">
+            <div>
+              <SectionLabel>Pilot projects</SectionLabel>
+              <h2 className="text-balance text-4xl font-semibold leading-tight text-white sm:text-6xl">
+                Built to prove value before scaling.
+              </h2>
+            </div>
+            <p className="max-w-2xl text-lg leading-8 text-paper/68">
+              We start with focused hospitality partners, clear deliverables and
+              simple performance tracking. As client results come in, this
+              section will show real growth data, content examples and
+              review/customer engagement improvements.
+            </p>
+          </motion.div>
+          <div className="mt-12 grid gap-4 md:grid-cols-3">
+            {pilotAreas.map((item, index) => (
+              <motion.div
+                key={item.title}
+                {...fadeUp(index * 0.06)}
+                className="border hairline bg-graphite p-6"
+              >
+                <p className="text-sm text-muted">Early partner work</p>
+                <p className="mt-10 text-2xl font-semibold leading-tight text-white">
+                  {item.title}
+                </p>
+                <p className="mt-4 text-sm leading-6 text-paper/68">
+                  {item.copy}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="relative overflow-hidden py-24 sm:py-32">
         <Image
           src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=2200&q=84"
@@ -979,7 +1030,7 @@ export default function Home() {
 
       <footer className="border-t hairline bg-ink px-5 py-8 sm:px-8">
         <div className="mx-auto flex max-w-7xl flex-col gap-5 text-sm text-muted lg:flex-row lg:items-center lg:justify-between">
-          <p>FTM. Flood The Market. Hospitality growth infrastructure.</p>
+          <p>FTM. Flood The Market. Hospitality growth systems.</p>
           <div className="flex flex-wrap gap-4">
             <ExternalLink href={instagramUrl} label="Open FTM Instagram" className="hover:text-paper">
               Instagram
