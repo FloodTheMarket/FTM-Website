@@ -46,7 +46,7 @@ const painPoints = [
   "Poor review generation",
   "No customer retention system",
   "No WhatsApp/customer database",
-  "No monthly performance tracking.",
+  "No monthly performance tracking",
   "No clear growth system",
   "Underused attention",
   "Lack of operational organisation"
@@ -64,7 +64,7 @@ const services = [
   {
     title: "Visibility",
     icon: PanelsTopLeft,
-    body: "A content and positioning engine that makes strong hospitality businesses easier to discover, remember and choose.",
+    body: "Consistent TikTok and Instagram content that helps strong hospitality businesses get seen, remembered and chosen.",
     points: [
       "TikTok and Instagram short-form content",
       "Shoot days",
@@ -78,7 +78,7 @@ const services = [
   {
     title: "Retention",
     icon: Repeat2,
-    body: "Customer capture and re-engagement systems that help turn one visit, one scan or one offer into a repeat relationship.",
+    body: "Simple follow-up systems that help turn one visit, one scan or one offer into another customer interaction.",
     points: [
       "WhatsApp customer retention systems",
       "QR code customer capture",
@@ -92,7 +92,7 @@ const services = [
   {
     title: "Operations",
     icon: BarChart3,
-    body: "Reporting that helps owners understand what is working, what needs improving and what to focus on next.",
+    body: "Simple monthly reporting that helps owners see what is working, what needs improving and what to focus on next.",
     points: [
       "Monthly KPI reporting",
       "Google review systems",
@@ -159,11 +159,11 @@ const process = [
   {
     title: "Audit",
     detail:
-      "We analyse the business, online presence, reviews, content, customer journey and growth opportunities."
+      "We look at the venue, socials, reviews, content consistency, customer journey and missed opportunities."
   },
   {
     title: "Strategy",
-    detail: "We build a clear content, retention and growth plan."
+    detail: "We build a clear plan for content, reviews, customer follow-up and repeat visits."
   },
   {
     title: "Shoot Day",
@@ -172,12 +172,12 @@ const process = [
   },
   {
     title: "Growth Systems",
-    detail: "We set up review, retention and customer engagement systems."
+    detail: "We set up practical review, retention and customer follow-up systems."
   },
   {
     title: "Monthly Reporting",
     detail:
-      "We track content performance, reviews, customer engagement and growth opportunities."
+      "We track content, reviews, customer engagement and what to improve next."
   }
 ];
 
@@ -209,7 +209,7 @@ const systemCards = [
   { label: "Content", value: "Reach", detail: "short-form performance" },
   { label: "Retention", value: "QR", detail: "customer capture" },
   { label: "Reviews", value: "4.8", detail: "reputation signal" },
-  { label: "Reporting", value: "KPI", detail: "monthly visibility" }
+  { label: "Reporting", value: "KPI", detail: "monthly tracking" }
 ];
 
 function fadeUp(delay = 0) {
@@ -404,7 +404,7 @@ function SystemPanel() {
         <div>
           <p className="text-sm text-muted">Growth systems</p>
           <p className="mt-2 max-w-sm text-2xl font-semibold text-white">
-            Content, retention, reviews and reporting in one monthly growth
+            Content, reviews, follow-up and reporting in one monthly growth
             system.
           </p>
         </div>
@@ -482,9 +482,9 @@ export default function Home() {
               Modern growth systems for hospitality brands.
             </h1>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-paper/76 sm:text-xl">
-              FTM helps restaurants, cafes and hospitality businesses improve
-              visibility, retention and customer engagement through content,
-              systems and strategy.
+              FTM helps restaurants, cafes and takeaways turn content, reviews
+              and customer follow-up into more consistent attention and repeat
+              customers.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <a
@@ -551,8 +551,8 @@ export default function Home() {
               Most hospitality businesses do not have a clear growth system.
             </h2>
             <p className="mt-6 max-w-lg text-base leading-7 text-paper/64">
-              Good venues lose attention, reviews and repeat customers when
-              content, retention and reporting are treated as separate tasks.
+              Good venues lose bookings, reviews and repeat customers when
+              content, follow-up and reporting are treated as separate tasks.
             </p>
           </motion.div>
           <motion.div
@@ -577,11 +577,11 @@ export default function Home() {
           <motion.div {...fadeUp()} className="max-w-3xl">
             <SectionLabel>Services</SectionLabel>
             <h2 className="text-balance text-4xl font-semibold leading-tight text-white sm:text-6xl">
-              Content is the entry point. Systems create the value.
+              Content gets people interested. Systems bring them back.
             </h2>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-paper/68">
-              FTM connects visibility, retention, reviews and reporting so
-              hospitality owners can see what is moving the business forward.
+              FTM connects content, reviews, customer follow-up and simple
+              reporting so owners can see what is actually helping the business.
             </p>
           </motion.div>
 
@@ -640,29 +640,29 @@ export default function Home() {
             <div className="absolute inset-0 bg-black/24" />
             <div className="absolute bottom-5 left-5 right-5 border border-white/18 bg-black/64 p-5 text-paper backdrop-blur">
               <p className="text-sm uppercase tracking-[0.18em] text-paper/62">
-                Operator lens
+                Owner problems
               </p>
               <p className="mt-3 text-2xl font-semibold">
-                The product is hospitality. The system makes it visible,
-                repeatable and measurable.
+                Great food and service still need consistent content, reviews
+                and customer follow-up.
               </p>
             </div>
           </motion.div>
           <motion.div {...fadeUp(0.1)}>
-            <SectionLabel>System visuals</SectionLabel>
+            <SectionLabel>Customer journey</SectionLabel>
             <h2 className="max-w-2xl text-balance text-4xl font-semibold leading-tight sm:text-6xl">
-              A cleaner way to manage attention after the first impression.
+              Helping more customers find you, trust you and come back.
             </h2>
             <p className="mt-7 max-w-xl text-lg leading-8 text-black/66">
-              FTM builds around the real customer journey: discovery, visit,
-              review, re-engagement and repeat purchase.
+              FTM focuses on the practical journey most venues need: discovery,
+              visit, review, follow-up and repeat purchase.
             </p>
             <div className="mt-10 grid gap-4 sm:grid-cols-2">
               {[
-                { icon: Store, title: "Venue reality", detail: "Content rooted in product, service and atmosphere." },
-                { icon: Users, title: "Customer loop", detail: "Capture, review and re-engagement routes after the visit." },
-                { icon: ClipboardList, title: "Monthly control", detail: "KPI reports, observations and performance recommendations." },
-                { icon: Sparkles, title: "Brand signal", detail: "Sharper online presence without generic agency noise." }
+                { icon: Store, title: "Content consistency", detail: "Regular posts built around the food, service and atmosphere." },
+                { icon: Users, title: "Customer follow-up", detail: "QR capture, reviews and re-engagement after the visit." },
+                { icon: ClipboardList, title: "Monthly tracking", detail: "Clear reports, observations and growth recommendations." },
+                { icon: Sparkles, title: "Stronger online presence", detail: "Sharper content without generic agency noise." }
               ].map((item) => {
                 const Icon = item.icon;
                 return (
@@ -686,13 +686,12 @@ export default function Home() {
             <div>
               <SectionLabel>Packages</SectionLabel>
               <h2 className="text-balance text-4xl font-semibold leading-tight text-white sm:text-6xl">
-                Premium growth retainers, not basic reels bundles.
+                Built around what your venue needs next.
               </h2>
             </div>
             <p className="max-w-2xl text-lg leading-8 text-paper/68">
-              Each package is designed around a level of involvement, from
-              consistent visibility to a deeper operating partnership across
-              retention and reporting.
+              Start with consistent content, add review and retention systems,
+              then build a clearer monthly routine for improving performance.
             </p>
           </motion.div>
 
@@ -789,7 +788,7 @@ export default function Home() {
             <div>
               <SectionLabel>Process</SectionLabel>
               <h2 className="text-balance text-4xl font-semibold leading-tight text-white sm:text-5xl">
-                A focused monthly system for sharper execution.
+                A clear monthly process, without overcomplicating it.
               </h2>
             </div>
             <div className="grid gap-3">
@@ -823,20 +822,20 @@ export default function Home() {
           <motion.div {...fadeUp()}>
             <SectionLabel>About FTM</SectionLabel>
             <h2 className="text-balance text-4xl font-semibold leading-tight text-white sm:text-6xl">
-              Two co-founders building a serious hospitality growth company.
+              Two co-founders building a serious hospitality growth partner.
             </h2>
             <p className="mt-7 max-w-2xl text-lg leading-8 text-paper/70">
               FTM is led by two co-founders and co-CEOs, combining operational
               discipline with creative execution. Both founders are involved in
-              strategy, growth, operations and scaling, keeping the work tied to
-              business outcomes.
+              strategy, client work and growth, keeping the service practical
+              and tied to what venues actually need.
             </p>
           </motion.div>
           <motion.div {...fadeUp(0.1)} className="grid gap-4">
             {[
               {
                 title: "Operations, systems and growth",
-                copy: "Finance, client management, reporting, operational organisation and growth systems."
+                copy: "Client management, reporting, customer follow-up, review systems and monthly growth recommendations."
               },
               {
                 title: "Creative direction and production",
@@ -858,13 +857,13 @@ export default function Home() {
             <div>
               <SectionLabel>Future proof</SectionLabel>
               <h2 className="text-balance text-4xl font-semibold leading-tight text-white sm:text-6xl">
-                Case studies will track attention, reputation and repeat
-                customers.
+                Case studies will show what changed for real venues.
               </h2>
             </div>
             <p className="max-w-2xl text-lg leading-8 text-paper/68">
-              This section is ready for live proof as client results are added:
-              clean before/after context without inflated marketing claims.
+              This section is ready for real client proof as results are added:
+              content examples, review improvements and customer follow-up
+              activity without inflated marketing claims.
             </p>
           </motion.div>
           <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -893,8 +892,8 @@ export default function Home() {
             </h2>
             <p className="mt-6 max-w-xl text-lg leading-8 text-black/64">
               Share the venue, current gaps and what you want to improve:
-              visibility, reviews, repeat customers, reporting or operational
-              organisation.
+              content consistency, reviews, repeat customers, follow-up or
+              monthly tracking.
             </p>
             <div className="mt-8">
               <SocialButtons dark />
@@ -933,7 +932,7 @@ export default function Home() {
                 rows={5}
                 required
                 className="resize-none border border-black/14 bg-transparent p-4 text-base outline-none transition placeholder:text-black/35 focus:border-black"
-                placeholder="Visibility, retention, reviews, reporting, content consistency..."
+                placeholder="Content consistency, reviews, customer follow-up, repeat visits..."
               />
             </label>
             <input type="hidden" name="_subject" value="New FTM Growth Audit Request" />
@@ -1005,8 +1004,8 @@ export default function Home() {
             Ready to turn attention into repeat customers?
           </h2>
           <p className="mx-auto mt-7 max-w-2xl text-lg leading-8 text-paper/72">
-            Book a free hospitality growth audit and see where your business is
-            leaking attention, retention and revenue.
+            Book a free hospitality growth audit and see where your venue could
+            improve content, reviews, follow-up and repeat customer activity.
           </p>
           <div className="mt-9 flex flex-col justify-center gap-3 sm:flex-row">
             <a
