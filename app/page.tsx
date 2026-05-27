@@ -12,7 +12,6 @@ import {
   LineChart,
   Mail,
   Menu,
-  MessageCircle,
   Music2,
   PanelsTopLeft,
   Repeat2,
@@ -983,6 +982,9 @@ export default function Home() {
             <ExternalLink href={emailUrl} label="Email FTM" className="hover:text-paper">
               enquiries@floodthemarket.co.uk
             </ExternalLink>
+            <a href="/ops-kit" className="hover:text-paper">
+              Ops Kit
+            </a>
           </div>
         </div>
       </footer>
