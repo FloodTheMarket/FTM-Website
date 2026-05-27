@@ -8,7 +8,6 @@ import {
   Check,
   ChevronRight,
   CircleDot,
-  ClipboardList,
   Instagram,
   LineChart,
   Mail,
@@ -18,11 +17,9 @@ import {
   PanelsTopLeft,
   Repeat2,
   ShieldCheck,
-  Sparkles,
   Star,
   Store,
   Target,
-  Users,
   X
 } from "lucide-react";
 import Image from "next/image";
@@ -623,60 +620,6 @@ export default function Home() {
               );
             })}
           </div>
-        </div>
-      </section>
-
-      <section className="overflow-hidden bg-paper py-24 text-ink sm:py-32">
-        <div className="mx-auto grid max-w-7xl gap-12 px-5 sm:px-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
-          <motion.div {...fadeUp()} className="relative min-h-[520px] overflow-hidden">
-            <Image
-              src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=1500&q=84"
-              alt="Hospitality team preparing a service"
-              fill
-              unoptimized
-              sizes="(min-width: 1024px) 46vw, 100vw"
-              className="image-cover"
-            />
-            <div className="absolute inset-0 bg-black/24" />
-            <div className="absolute bottom-5 left-5 right-5 border border-white/18 bg-black/64 p-5 text-paper backdrop-blur">
-              <p className="text-sm uppercase tracking-[0.18em] text-paper/62">
-                Owner problems
-              </p>
-              <p className="mt-3 text-2xl font-semibold">
-                Great food and service still need consistent content, reviews
-                and customer follow-up.
-              </p>
-            </div>
-          </motion.div>
-          <motion.div {...fadeUp(0.1)}>
-            <SectionLabel>Customer journey</SectionLabel>
-            <h2 className="max-w-2xl text-balance text-4xl font-semibold leading-tight sm:text-6xl">
-              Helping more customers find you, trust you and come back.
-            </h2>
-            <p className="mt-7 max-w-xl text-lg leading-8 text-black/66">
-              FTM focuses on the practical journey most venues need: discovery,
-              visit, review, follow-up and repeat purchase.
-            </p>
-            <div className="mt-10 grid gap-4 sm:grid-cols-2">
-              {[
-                { icon: Store, title: "Content consistency", detail: "Regular posts built around the food, service and atmosphere." },
-                { icon: Users, title: "Customer follow-up", detail: "QR capture, reviews and re-engagement after the visit." },
-                { icon: ClipboardList, title: "Monthly tracking", detail: "Clear reports, observations and growth recommendations." },
-                { icon: Sparkles, title: "Stronger online presence", detail: "Sharper content without generic agency noise." }
-              ].map((item) => {
-                const Icon = item.icon;
-                return (
-                  <div key={item.title} className="border border-black/12 p-5">
-                    <Icon size={22} />
-                    <p className="mt-5 text-xl font-semibold">{item.title}</p>
-                    <p className="mt-2 text-base leading-7 text-black/58">
-                      {item.detail}
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
-          </motion.div>
         </div>
       </section>
 
